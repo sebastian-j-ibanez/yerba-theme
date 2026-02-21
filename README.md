@@ -1,6 +1,6 @@
-# Yerba
+# Yerba 🧉
 
-A warm, low-contrast dark theme with earthy tones. No bold, no italic — uniform font weight throughout.
+A warm, low-contrast dark theme with earthy tones.
 
 ## Palette
 
