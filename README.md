@@ -21,8 +21,11 @@ A warm, low-contrast dark theme with earthy tones.
 - [Helix](helix/)
 - [Ghostty](ghostty/)
 - [VS Code](vscode/)
+- [Neovim](https://github.com/yerba-theme/nvim)
 
 ## Install
+
+### Helix, Ghostty
 
 ```sh
 git clone https://github.com/your-user/yerba-theme
@@ -31,11 +34,36 @@ cd yerba-theme
 # install for a specific app
 ./install.sh helix
 ./install.sh ghostty
-./install.sh vscode
 
 # or install all
 ./install.sh all
 ```
+
+### VS Code
+
+Install the [Yerba](https://marketplace.visualstudio.com/items?itemName=sebastian-j-ibanez.yerba-theme) extension by sebastian-j-ibanez from the extension page.
+
+Alternatively open VS Code, launch quick open (Ctrl+P), paste the following command, and press enter:
+
+```
+ext install sebastian-j-ibanez.yerba-theme
+```
+
+### Neovim
+
+Add to your lazy.nvim config:
+
+```lua
+{ "yerba-theme/nvim", config = function() vim.cmd.colorscheme("yerba") end }
+```
+
+Or install manually with `:packadd`:
+
+```sh
+git clone https://github.com/yerba-theme/nvim ~/.local/share/nvim/site/pack/themes/start/yerba
+```
+
+Then add `vim.cmd.colorscheme("yerba")` to your config.
 
 ## License
 
